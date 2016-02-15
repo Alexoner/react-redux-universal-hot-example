@@ -38,7 +38,7 @@ if (process.env.NODE_ENV === 'development') {
 
 const component = (
   <Router render={(props) =>
-        <ReduxAsyncConnect {...props} helpers={{client}} />
+        <ReduxAsyncConnect {...props} helpers={{client}} filter={item => !item.deferred} />
       } history={history}>
     {getRoutes(store)}
   </Router>
