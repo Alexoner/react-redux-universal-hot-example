@@ -22,7 +22,7 @@ global.webpackIsomorphicTools = new WebpackIsomorphicTools(require('../webpack/w
   fs.readFile(basedir + '/src/index.html', 'utf8', function done(err, data) {
     const html = data.replace(`<script src="client.js"></script>`, `<script src="${webpackIsomorphicTools.assets().javascript.main}"></script>`)
     .replace(`href="styles.css">`, `href="${webpackIsomorphicTools.assets().styles.main}">`);
-    fs.outputFile(basedir + '/static/index.html', html);
+    fs.outputFile(basedir + '/index.html', html);
     console.log(`copied 'index.html'.`);
   });
 });
