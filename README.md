@@ -1,4 +1,4 @@
-# React Redux Universal Hot Example
+# alexoner's GitHub Page homepage
 
 [![build status](https://img.shields.io/travis/erikras/react-redux-universal-hot-example/master.svg?style=flat-square)](https://travis-ci.org/erikras/react-redux-universal-hot-example)
 [![Dependency Status](https://david-dm.org/erikras/react-redux-universal-hot-example.svg?style=flat-square)](https://david-dm.org/erikras/react-redux-universal-hot-example)
@@ -223,37 +223,3 @@ To run the tests in the project, just simply run `npm test` if you have `Chrome`
 
 To keep watching your test suites that you are working on, just set `singleRun: false` in the `karma.conf.js` file. Please be sure set it to `true` if you are running `npm test` on a continuous integration server (travis-ci, etc).
 
-## Deployment on Heroku
-
-To get this project to work on Heroku, you need to:
-
-1. Remove the `"PORT": 8080` line from the `betterScripts` / `start-prod` section of `package.json`.
-2. `heroku config:set NODE_ENV=production`
-3. `heroku config:set NODE_PATH=./src`
-4. `heroku config:set NPM_CONFIG_PRODUCTION=false`
-  * This is to enable webpack to run the build on deploy.
-
-The first deploy might take a while, but after that your `node_modules` dir should be cached.
-
-## FAQ
-
-This project moves fast and has an active community, so if you have a question that is not answered below please visit our [Discord channel](https://discord.gg/0ZcbPKXt5bZZb1Ko) or file an issue.
-
-
-## Roadmap 
-
-Although this isn't a library, we recently started versioning to make it easier to track breaking changes and emerging best practices. 
-
-* [Babel 6](https://github.com/babel/babel) - Coming soon with v1 (see [#488](https://github.com/erikras/react-redux-universal-hot-example/issues/488))
-* [Inline Styles](docs/InlineStyles.md) - CSS is dead
-
-## Contributing
-
-I am more than happy to accept external contributions to the project in the form of feedback, bug reports and even better - pull requests :) 
-
-If you would like to submit a pull request, please make an effort to follow the guide in [CONTRIBUTING.md](CONTRIBUTING.md). 
- 
----
-Thanks for checking this out.
-
-– Erik Rasmussen, [@erikras](https://twitter.com/erikras)
