@@ -32,7 +32,9 @@ function initSocket() {
   return socket;
 }
 
-global.socket = initSocket();
+if (process.env.NODE_ENV === 'development') {
+  global.socket = initSocket();
+}
 
 const component = (
   <Router render={(props) =>
