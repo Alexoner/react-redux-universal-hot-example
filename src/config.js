@@ -16,11 +16,11 @@ module.exports = Object.assign({
   apiPort: process.env.APIPORT,
   app: {
     title: "Alexoner's homepage",
-    description: 'All the modern best practices in one example.',
+    description: 'Github Pages using React to split Front-end and Back-end.',
     head: {
       titleTemplate: 'Alexoner\'s homepage: %s',
       meta: [
-        {name: 'description', content: 'All the modern best practices in one example.'},
+        {name: 'description', content: 'Github Pages using React to split Front-end and Back-end.'},
         {charset: 'utf-8'},
         {property: 'og:site_name', content: 'Alexoner\'s homepage'},
         {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
@@ -28,8 +28,8 @@ module.exports = Object.assign({
         {property: 'og:title', content: 'Alexoner\'s homepage'},
         {property: 'og:description', content: 'Just for fun.'},
         {property: 'og:card', content: 'summary'},
-        {property: 'og:site', content: '@erikras'},
-        {property: 'og:creator', content: '@erikras'},
+        {property: 'og:site', content: '@Alexoner'},
+        {property: 'og:creator', content: '@Alexoner'},
         {property: 'og:image:width', content: '200'},
         {property: 'og:image:height', content: '200'}
       ]
