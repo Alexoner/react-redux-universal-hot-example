@@ -9,6 +9,7 @@ import ApiClient from './helpers/ApiClient';
 import io from 'socket.io-client';
 import {Provider} from 'react-redux';
 import { Router, browserHistory } from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux';
 import { ReduxAsyncConnect } from 'redux-async-connect';
 import useScroll from 'scroll-behavior/lib/useStandardScroll';
 
@@ -18,6 +19,7 @@ const client = new ApiClient();
 const history = useScroll(() => browserHistory)();
 const dest = document.getElementById('content');
 const store = createStore(history, client, window.__data);
+const syncedHistory = syncHistoryWithStore(history, store);
 
 function initSocket() {
   const socket = io('', {path: '/ws'});
@@ -39,7 +41,7 @@ if (process.env.NODE_ENV === 'development') {
 const component = (
   <Router render={(props) =>
         <ReduxAsyncConnect {...props} helpers={{client}} filter={item => !item.deferred} />
-      } history={history}>
+      } history={syncedHistory}>
     {getRoutes(store)}
   </Router>
 );
