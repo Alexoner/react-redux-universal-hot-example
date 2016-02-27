@@ -89,12 +89,6 @@
         "NODE_ENV": "production",
         "APIPORT": 3030
       }
-    },
-    "build": {
-      "command": "webpack --verbose --colors --display-error-details --config webpack/prod.config.js",
-      "env": {
-        "NODE_ENV": "production"
-      }
     }
   },
   "dependencies": {
