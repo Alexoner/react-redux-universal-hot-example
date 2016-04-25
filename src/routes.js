@@ -19,7 +19,8 @@ export default (store) => {
       const { auth: { user }} = store.getState();
       if (!user) {
         // oops, not logged in, so can't be here!
-        replace('/');
+        // replaceState(null, '/login?back_url=url');
+        replace({pathname: '/login', query: {back_url: 'backurl'}});
       }
       cb();
     }
