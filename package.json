@@ -56,14 +56,6 @@
         "APIPORT": 3030
       }
     },
-    "build": {
-      "command": "node ./bin/build.js",
-      "env": {
-        "NODE_PATH": "./bin",
-        "NODE_ENV": "production",
-        "APIPORT": 3030
-      }
-    },
     "start-dev": {
       "command": "node ./bin/server.js",
       "env": {

@@ -61,7 +61,7 @@ export default class Home extends Component {
             <CounterButton multireducerKey="counter3"/>
           </div>
 
-          <h3>Features included in this project</h3>
+          <h3>Interested Fields</h3>
 
           <dl>
             <dt>Artificial Intelligence</dt>
