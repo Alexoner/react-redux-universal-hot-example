@@ -27,8 +27,6 @@
     "start": "concurrent --kill-others \"npm run start-prod\" \"npm run start-prod-api\"",
     "start-prod": "better-npm-run start-prod",
     "start-prod-api": "better-npm-run start-prod-api",
-    "build-fe": "webpack --verbose --colors --display-error-details --config webpack/prod.config.js && better-npm-run build",
-    "postinstall-fe": "webpack --display-error-details --config webpack/prod.config.js",
     "build": "better-npm-run build",
     "postinstall": "npm run build",
     "lint": "eslint -c .eslintrc src api",
@@ -54,14 +52,6 @@
       "command": "node ./bin/api.js",
       "env": {
         "NODE_PATH": "./api",
-        "NODE_ENV": "production",
-        "APIPORT": 3030
-      }
-    },
-    "build": {
-      "command": "node ./bin/build.js",
-      "env": {
-        "NODE_PATH": "./bin",
         "NODE_ENV": "production",
         "APIPORT": 3030
       }
@@ -93,9 +83,11 @@
       }
     },
     "build": {
-      "command": "webpack --verbose --colors --display-error-details --config webpack/prod.config.js",
+      "command": "webpack --verbose --colors --display-error-details --config webpack/prod.config.js && node ./bin/build.js",
       "env": {
-        "NODE_ENV": "production"
+        "NODE_PATH": "./bin",
+        "NODE_ENV": "production",
+        "APIPORT": 3030
       }
     }
   },

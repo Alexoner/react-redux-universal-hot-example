@@ -1,4 +1,4 @@
-# alexoner's GitHub Page homepage
+# alexoner's *React* powered GitHub Page
 
 ## install
 npm install
