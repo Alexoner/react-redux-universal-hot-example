@@ -90,6 +90,8 @@ export default class Home extends Component {
               On the <Link to="/login">Login page</Link> you can submit a username which will be sent to the server
               and stored in the session. Subsequent refreshes will show that you are still logged in.
             </dd>
+            <dt>Web scraping</dt>
+            <dd>Vertical searching</dd>
             <dt>Redirect after state change</dt>
             <dd>
               After you log in, you will be redirected to a Login Success page. This <strike>magic</strike> logic
