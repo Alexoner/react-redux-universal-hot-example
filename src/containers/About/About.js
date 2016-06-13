@@ -18,14 +18,9 @@ export default class About extends Component {
         <h1>About Me</h1>
         <Helmet title="About Me"/>
 
-        <p>This project was originally created by Alexoner
+        <p>This is Alexoner on Github
           (<a href="https://github.com/alexoner" target="_blank">@alexoner</a>)
         </p>
-
-        <h3>Mini Bar <span style={{color: '#aaa'}}>(not that kind)</span></h3>
-
-        <p>Hey! You found the mini info bar! The following component is display-only. Note that it shows the same
-          time as the info bar.</p>
 
         <MiniInfoBar/>
 

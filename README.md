@@ -1,4 +1,5 @@
 # alexoner's *React* powered GitHub Page
+This is a publish branch based on branch `static`
 
 ## install
 npm install
