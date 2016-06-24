@@ -2,12 +2,17 @@
 This is a publish branch based on branch `static`
 
 ## install
+```shell
 npm install
+```
 
 ## run dev server
+```shell
 npm run dev > log 2>&1 &
+```
 
 ## run production server
+```shell
 npm run build
 npm run start
 ```
