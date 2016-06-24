@@ -37,6 +37,8 @@ This is a starter boilerplate app I've put together using the following technolo
 
 I cobbled this together from a wide variety of similar "starter" repositories. As I post this in June 2015, all of these libraries are right at the bleeding edge of web development. They may fall out of fashion as quickly as they have come into it, but I personally believe that this stack is the future of web development and will survive for several years. I'm building my new projects like this, and I recommend that you do, too.
 
+This is a standalone frontend branch, which enables frontend and backend split. When building assets, a html entry `index.html` will be generated. So that you can use the project with other backend servers.
+
 ## Installation
 
 ```bash
